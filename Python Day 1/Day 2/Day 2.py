@@ -88,3 +88,129 @@
 # area = radius * PI **2
 
 # print(f"Area of the circle with Radius {radius} is Area {area} ")
+
+# Q: Assign your first and last name to two variables.
+# Print your full name in one line using string concatenation.
+
+# firstname = "Sanket"
+# lastname = "Salunke"
+
+# fullname = firstname + " " + lastname
+
+# print(f"Fullname =  {fullname}")
+
+# Q: Create a variable with an underscore (e.g., user_age) and assign it a value.
+# Print it using an f-string.
+
+# full_name = "Sanket Salunke"
+
+# print(f"Full Name of the User is {full_name}")
+
+
+# Q: Create two variables `value` and `Value`, assign them different numbers.
+# Print both and observe the output.
+
+# value = 10
+# Value =20
+# # for case sensitive purpose
+# print(value)
+# print(Value)
+
+# # Q: Assign an integer to variable `x`, then assign a string to the same `x`.
+# # Print type before and after re-assignment.
+
+# x = 10
+# x = "sanket"
+
+# print(x)
+
+# Q: Try creating a variable named `class` and assign it a value.
+# Observe the error and fix it with a valid name.
+
+# class = 10 # invalid due to reserved keywords
+
+# print(class)
+
+
+# Q: Use `.format()` method to print: “The cost of 5 apples is ₹150”
+# Use variables for quantity and price.
+
+# qty = 10
+
+# price = 200
+
+# print("The cost of {} apple is rs {}".format(qty,price))
+
+
+# Q: Print a message using `%s` and `%d` formatting style. Example: "User Ashutosh is 27 years old."
+
+# name = "Sanket"
+# age = 26
+
+# # %s for string and %d for integer
+
+# print("User %s is %d years old." % (name,age))
+
+# Q: Assign values to multiple variables using line continuation:
+# Example:
+# x = 1 + \
+#     2 + \
+#     3
+# Print x.
+
+# x = 1 + \
+#     2 + \
+#     3
+
+# print(x)
+
+# Q: Assign the result of a mathematical expression (e.g., 10 + 5 * 2) to a variable.
+# Print it.
+
+# Total = 10 + 5 * 2
+
+# print(Total)
+
+
+# Q: x = y = z = 5 + 10
+# Print x, y, z
+
+# x = y = z = 5 + 10
+
+# print(x, y, z)
+
+# Q: Take two numbers as input from the user, assign to `a` and `b`, and print their average.
+
+# A = float(input("Enter the first number"))
+# B = float(input("Enter the second number"))
+
+# Average = (A + B)/ 2
+
+# print(f"Average vaule is {Average}")
+
+# Q: Assign a string with special characters like newline (`\n`) and tab (`\t`) to a variable.
+# Print it and observe the effect.
+
+# ABC = "Hello \n Sanket \there"
+
+# print(ABC)
+
+
+# Q: Use `print(a, b, sep='-', end='!')` to customize print output.
+
+# a = "Hello"
+# b = "World"
+
+# print(a, b, sep='-', end='!')  # not running
+
+
+# Q: Create two variables with the same value and print their `id()` to check if they refer to the same object.
+
+A =14
+B =14
+
+# print(A)
+#  print(B)
+
+print(f"value of A is {A} and value of B is {B}")
+
