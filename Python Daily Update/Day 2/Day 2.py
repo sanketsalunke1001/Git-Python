@@ -206,11 +206,11 @@
 
 # Q: Create two variables with the same value and print their `id()` to check if they refer to the same object.
 
-A =14
-B =14
+# A =14
+# B =14
 
-# print(A)
-#  print(B)
+# # # print(A)
+# # #  print(B)
 
-print(f"value of A is {A} and value of B is {B}")
+#  print(f"value of A is {A} and value of B is {B}")
 
