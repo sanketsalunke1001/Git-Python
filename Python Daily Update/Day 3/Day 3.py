@@ -212,3 +212,27 @@
 
 # Formatted Receipt Generator:
 # Accept item name (str), quantity (int), and price (float). Calculate total and display the receipt with formatted output.
+
+def generate_receipt(item_name: str, quantity: int, price: float) -> None:
+    """
+    Prints a formatted receipt for the given item.
+    """
+    total = quantity * price
+    
+    print("\n======== RECEIPT ========")
+    print(f"Item Name   : {item_name}")
+    print(f"Quantity    : {quantity}")
+    print(f"Price/item  : ${price:.2f}")
+    print(f"Total Cost  : ${total:.2f}")
+    print("=========================")
+
+# Get user input
+try:
+    name = input("Enter item name: ")
+    qty = int(input("Enter quantity: "))
+    unit_price = float(input("Enter price per item: "))
+
+    generate_receipt(name, qty, unit_price)
+
+except ValueError:
+    print("Invalid input. Quantity must be an integer and price must be a number.")
