@@ -182,3 +182,44 @@
 # result = filename.endswith(".py")
 # print(result)
 
+#Remaining
+
+
+# Check if "hello.txt" ends with ".doc".
+
+# Sample_Text = "hello.txt"
+# if Sample_Text.endswith(".doc"):
+#     print("Yes, it ends with .doc")
+# else:
+#     print("No, it does not end with .doc")
+
+#   ------------------------------------------------------
+
+
+# Mixed
+# Take the string "hello world":
+
+# Convert it to uppercase,
+
+# text = "hello world"
+# uppercase_text = text.upper()
+# print(uppercase_text)
+
+
+# Replace "HELLO" with "HI",
+
+# text = "hello world"
+# uppercase_text = text.upper()
+# replaced_text = uppercase_text.replace("HELLO", "HI")
+# print(replaced_text)
+
+
+# Slice the last 5 characters.
+
+# text = "hello world"
+# uppercase_text = text.upper()              # "HELLO WORLD"
+# replaced_text = uppercase_text.replace("HELLO", "HI")  # "HI WORLD"
+# sliced_text = replaced_text[-5:]           # Last 5 characters
+# print(sliced_text)
+
+
