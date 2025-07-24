@@ -222,7 +222,140 @@
 
 #           ---------------------------------------------
 
-BMI Calculator: BMI = weight/(height^2). Classify as Underweight (<18.5), Normal (18.5-24.9),
-Overweight (>=25).
+# BMI Calculator: BMI = weight/(height^2). Classify as Underweight (<18.5), Normal (18.5-24.9),
+# Overweight (>=25).
 
+# # Get weight and height from user
+# weight = float(input("Enter your weight in kg: "))
+# height = float(input("Enter your height in meters: "))
+
+# # Calculate BMI
+# bmi = weight / (height ** 2)
+
+# print(f"\nYour BMI is: {bmi:.2f}")
+
+# if bmi < 18.5:
+#     print("Category: Underweight")
+# elif 18.5 <= bmi <= 24.9:
+#     print("Category: Normal")
+# else:
+#     print("Category: Overweight")
+
+# ***************************** 
+
+#       ---------------------------------------------------
+
+# 15. Grade Calculator: Average marks of 5 subjects: A >=90, B >=75, C >=50, Fail <50.
+
+
+# marks = int(input("Enter your marks: "))
+
+# if marks >= 90:
+#     print("Grade A")
+
+# elif marks >= 75:
+#     print("Grade B")
+
+# elif marks >= 50:
+#     print("Grade C")
+# else:
+#     print("Fail")
+
+#       ------------------------------------------------------
+
+# 16. ATM Simulation: Ask balance and amount. Deduct only if balance is sufficient.
+
+# balance = float(input("Enter your current balance: ₹"))
+# withdraw = float(input("Enter amount to withdraw: ₹"))
+
+# #To Check and update balance
+# if withdraw <= balance:
+#     balance = balance - withdraw        #balance -= withdraw  #     balance = balance - withdraw  # 
+#     print(f"Withdrawal successful! Remaining balance: ₹{balance:.2f}")
+# else:
+#     print("Insufficient balance.")
+
+#           -------------------------------------------------------------
+
+#17. Triangle Checker: Check if three sides form a valid triangle. If valid, print type: Equilateral,
+# Isosceles, or Scalene.
+
+# Input three sides of the triangle
+
+# a = float(input("Enter side a: "))
+# b = float(input("Enter side b: "))
+# c = float(input("Enter side c: "))
+
+# if a + b > c and b + c > a and c + a > b:
+#     print("This is a valid triangle.")
+    
+#     if a == b == c:
+#         print("Type: Equilateral triangle")
+#     elif a == b or b == c or c == a:
+#         print("Type: Isosceles triangle")
+#     else:
+#         print("Type: Scalene triangle")
+# else:
+#     print("Not a valid triangle.")
+
+
+#       --------------------------------------------------------
+
+# 18. Rock-Paper-Scissors: User vs computer. Decide winner.
+
+# import random
+
+# choices = ["rock","paper","scissors"]
+
+# user = input("Enter your choice (rock, paper, scissors): ").lower()
+
+# computer = random.choice(choices)
+# print(f"Coumputer chose {computer}")
+
+# if user == computer: 
+#     print("It's a tie.")
+# elif    (user == "rock" and computer == "scissors") or \
+#         (user == "scissors" and computer == "paper") or \
+#         (user == "paper" and computer == "rock"): 
+#         print("You won")
+
+# elif user in choices:
+#       print("Computer wins")
+# else:
+#       print("Invalid Input.")
+
+#           ---------------------------------------------------------------
+
+# 19. Movie Ticket: Ask age and time. Apply 20% discount if student (<18).
+
+# ticket_price = 400
+
+# age = int(input("Enter your age: "))
+# time = input("Enter show time (as 09:30 PM): ")
+
+# if age < 18:
+#     discount = ticket_price * 0.20
+#     final_price = ticket_price - discount
+#     print("Discount is applied for student 20%")
+# else :
+#     final_price = ticket_price
+
+# print(f"show time : {time}")
+# print(f"Ticket price : rs {final_price}")
+
+
+# 20. Traffic Signal: Ask color. Green: Go, Red: Stop, Yellow: Wait.
+
+# colour = input("Enter traffic signal colour (Red, Green, Yellow): ").lower()
+
+# if colour == "green":
+#     print("Go")
+# elif colour == "red":
+#     print("Stop")
+# elif colour == "yellow":
+#     print("Wait")
+# else:
+#     print("Invalid input!")
+
+#       ------------------------------------------------------------------
 
