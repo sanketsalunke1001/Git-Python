@@ -250,7 +250,7 @@
 #     if choice == '1':
 #         amount = float(input("Enter amount to deposit: ₹"))
 #         if amount > 0:
-#             balance += amount
+#             balance = balance + amount
 #             print(f"₹{amount} deposited. New balance: ₹{balance}")
 #         else:
 #             print("Invalid amount. Must be greater than zero.")
@@ -262,7 +262,7 @@
 #         elif amount <= 0:
 #             print("Invalid amount. Must be greater than zero.")
 #         else:
-#             balance -= amount
+#             balance = balance - amount
 #             print(f"₹{amount} withdrawn. New balance: ₹{balance}")
 
 #     elif choice == '3':
@@ -274,9 +274,213 @@
 #         pass  # TODO: Implement loan feature later
 
 #     elif choice == '5':
-#         print("Thank you for banking with us. Goodbye!")
+#         print("Thank you for banking with us. Goodbye")
 #         break  # Exit the loop and program
 
 #     else:
 #         print("Invalid choice. Please enter a number between 1 and 5.")
 #         continue  # Ask the user again
+
+
+#       ---------------------------------------------------------------------------
+
+# Ask 5 multiple-choice questions.
+
+# For each wrong answer, print "Wrong! Try again." and continue to the next question.
+
+# If the user types "quit", break the game.
+
+# Use pass for a future "hint system".
+
+# List of questions and answers
+
+# questions = [
+#     {
+#         "question": "1. What is the capital of France?\n(a) Berlin\n(b) Madrid\n(c) Paris\n(d) Rome",
+#         "answer": "c"
+#     },
+#     {
+#         "question": "2. Which planet is known as the Red Planet?\n(a) Earth\n(b) Mars\n(c) Jupiter\n(d) Venus",
+#         "answer": "b"
+#     },
+#     {
+#         "question": "3. What is the largest ocean on Earth?\n(a) Atlantic\n(b) Indian\n(c) Arctic\n(d) Pacific",
+#         "answer": "d"
+#     },
+#     {
+#         "question": "4. Which language is used to write Python?\n(a) English\n(b) C\n(c) Python\n(d) Java",
+#         "answer": "c"
+#     },
+#     {
+#         "question": "5. What is the square root of 64?\n(a) 6\n(b) 8\n(c) 7\n(d) 9",
+#         "answer": "b"
+#     }
+# ]
+
+# print("Welcome to the Quiz Game!")
+# print("Type 'quit' anytime to exit.")
+# print("Type 'hint' to get a hint (feature coming soon).\n")
+
+# score = 0
+
+# for q in questions:
+#     print(q["question"])
+#     user_answer = input("Your answer (a/b/c/d): ").lower()
+
+#     if user_answer == "quit":
+#         print("Game exited by user.")
+#         break
+
+#     if user_answer == "hint":
+#         # Future hint system placeholder
+#         print("Hint system coming soon!")
+#         pass
+#         user_answer = input("Try again (a/b/c/d): ").lower()
+#         if user_answer == "quit":
+#             print("Game exited by user.")
+#             break
+
+#     if user_answer == q["answer"]:
+#         print("Correct!\n")
+#         score += 1
+#     else:
+#         print("Wrong! Try again.\n")
+
+# print(f"\nYour final score: {score}/{len(questions)}")
+# print("Thanks for playing!")
+
+#       -------------------------------------------------------------
+
+# User chooses from 3 patterns (triangle, square, pyramid).
+
+# Use for loops to generate the patterns.
+
+# Use continue to skip invalid sizes and break if the user chooses "exit".
+
+# while True:
+#     print("\nChoose a pattern to print:")
+#     print("1. triangle")
+#     print("2. square")
+#     print("3. pyramid")
+#     print("Type 'exit' to quit.")
+    
+#     choice = input("Enter your choice: ").lower()  # Needs string input first for user choice
+
+#     if choice == 'exit':
+#         print("Exiting the program.")
+#         break
+
+#     size = int(input("Enter the size of the pattern (positive number): "))
+
+#     if size <= 0:
+#         print("Invalid size. Please enter a positive number.")
+#         continue  # Skip to next loop iteration
+
+#     if choice == 'triangle':
+#         print("\nTriangle Pattern:")
+#         for i in range(1, size + 1):
+#             print("*" * i)
+
+#     elif choice == 'square':
+#         print("\nSquare Pattern:")
+#         for i in range(size):
+#             print("*" * size)
+
+#     elif choice == 'pyramid':
+#         print("\nPyramid Pattern:")
+#         for i in range(1, size + 1):
+#             spaces = ' ' * (size - i)
+#             stars = '*' * (2 * i - 1)
+#             print(spaces + stars)
+
+#     else:
+#         print("Invalid pattern choice. Please try again.")
+#         continue  # Repeat the loop
+
+
+#       -------------------------------------------------------------------------
+
+# A list of available books is displayed.
+
+# User can borrow, return, or view books.
+
+# break to exit the system.
+
+# continue when the user enters a wrong book name.
+
+# pass for a "late fee calculator" feature to be added later.
+
+
+# # # Initial list of available books
+# available_books = ["1984", "To Kill a Mockingbird", "The Great Gatsby", "Pride and Prejudice"]
+
+# # Borrowed books list
+# borrowed_books = []
+
+# def display_books():
+#     print("\nAvailable Books:")
+#     if not available_books:
+#         print("No books currently available.")
+#     else:
+#         for book in available_books:
+#             print("-", book)
+
+# def borrow_book():
+#     book = input("Enter the name of the book you want to borrow: ")
+#     if book in available_books:
+#         available_books.remove(book)
+#         borrowed_books.append(book)
+#         print(f"You borrowed '{book}'.")
+#     else:
+#         print("Book not available. Please check the title.")
+#         continue_flag = True
+#         return continue_flag
+#     return False
+
+# def return_book():
+#     book = input("Enter the name of the book you want to return: ")
+#     if book in borrowed_books:
+#         borrowed_books.remove(book)
+#         available_books.append(book)
+#         print(f"You returned '{book}'.")
+#     else:
+#         print("This book wasn't borrowed from this library.")
+#         continue_flag = True
+#         return continue_flag
+#     return False
+
+# def late_fee_calculator():
+#     # Feature to be implemented later
+#     pass
+
+# # Main loop
+# while True:
+#     print("\nLibrary Menu:")
+#     print("1. View Books")
+#     print("2. Borrow Book")
+#     print("3. Return Book")
+#     print("4. Calculate Late Fee (Coming Soon)")
+#     print("5. Exit")
+
+#     choice = input("Enter your choice (1-5): ")
+
+#     if choice == "1":
+#         display_books()
+#     elif choice == "2":
+#         if borrow_book():
+#             continue
+#     elif choice == "3":
+#         if return_book():
+#             continue
+#     elif choice == "4":
+#         late_fee_calculator()
+#         print("Late fee calculator feature will be added soon.")
+#     elif choice == "5":
+#         print("Exiting the system. Goodbye!")
+#         break
+#     else:
+#         print("Invalid choice. Please select from 1 to 5.")
+#         continue
+
+
+#           -----------------------------------------------------------------------------------------------
