@@ -544,3 +544,208 @@
 
 #           ------------------------------------------------------
 
+# Write a Python program that displays your name, age, and address on three different lines.
+
+# name = "Sanket Salunke"
+# age = 26
+# address = "Ekta apartment Airoli sectoe 17 Airoli..."
+
+# print("Name:", name)
+# print("Age:", age)
+# print("Address:", address)
+
+# print(f"""{name} \n Ekta apartment \n Airoli sector 17, \n {age} Airoli {address}""")
+
+#       ----------------------------------------------------------------------
+
+# Write a Python program to solve (x + y) * (x + y).
+# Test Data : x = 4, y = 3
+# Expected Output : (4 + 3) ^ 2) = 49
+
+# x = 4
+# y = 3
+
+# result = (x + y) * (x + y)
+
+# print(f"{x} + {y} ^ 2 = {result}")
+
+#       -------------------------------------------------------------
+
+# Write a Python program to compute the future value of a specified principal amount, rate of interest, and number of years.
+# Test Data : amt = 10000, int = 3.5, years = 7
+# Expected Output : 12722.79
+
+# amt = 10000
+# rate = 3.5 
+# years = 7
+
+# future_value = amt * (1 + rate / 100) ** years
+
+# print("Future Value:", round(future_value, 2))
+
+#           ---------------------------------------------------------------
+
+# Write a Python program to calculate the distance between the points (x1, y1) and (x2, y2).
+
+# import math
+
+# x1 = float(input("Enter x1: "))
+# y1 = float(input("Enter y1: "))
+# x2 = float(input("Enter x2: "))
+# y2 = float(input("Enter y2: "))
+
+# distance = math.sqrt((x2 - x1)**2-(y2 - y1)**2)
+
+# print(f"The distance between the points {x1}, {y1} and {x2}, {y2} is {distance:.2f} ")
+
+#       ----------------------------------------------------------------------
+
+# Write a Python program to check whether a file exists.
+
+# from pathlib import Path 
+
+# file_path = input ("Enter the file path: ")
+
+# path = Path(file_path)
+
+# # Check existence
+# if path.exists():
+#     print("File exists.")
+# else:
+#     print("File does not exist.")
+
+#  2 ----
+
+# import os
+
+# file_path = input ("Enter the file path: ")
+
+# if os.path.exists(file_path):
+#     print("File exists: ")
+
+# else:
+#     print("File does not exist.")
+
+#       ------------------------------------------------------
+
+# Write a Python program to determine if a Python shell is executing in 32bit or 64bit mode on OS.
+
+# import platform
+
+# # Get architecture info
+# arch = platform.architecture()[0]
+
+# # Display result
+# print(f"Python is running in {arch} mode.")
+
+# #   #  #  ---------------------
+# import struct
+
+# # Determine bit mode based on pointer size
+# bits = struct.calcsize("P") * 8
+
+# print(f"Python is running in {bits}-bit mode.")
+
+#          -----------------------------------------------------
+
+# Write a Python program to get OS name, platform and release information.
+
+# import os 
+# import platform
+
+# os_name = os.name
+
+# system = platform.system()
+# release = platform.release()
+
+# print("Os name: ", os_name)
+# print("Platform system: ", system)
+# print("Platform release: ", release)
+
+#       -----------------------------------------------------
+
+# Write a Python program to locate Python site packages.
+
+# import site
+
+# # Get list of site-packages directories
+# site_packages = site.getsitepackages()
+
+# # Display each path
+# print("Python site-packages directories:")
+# for path in site_packages:
+#     print(path)
+
+#           -----------------------------------------------
+
+# Write a Python program that calls an external command.
+
+# import subprocess
+
+# # Run an external command (example: echo)
+# result = subprocess.run(["echo", "Hello from the shell!"], capture_output=True, text=True)
+
+# # Print the output
+# print("Command output:", result.stdout.strip())
+
+# import subprocess
+
+# # For Windows:
+# # subprocess.run(["dir"], shell=True)
+
+# # For Unix/Linux/macOS:
+# subprocess.run(["ls", "-l"])
+
+#  # not running 
+
+#           --------------------------------
+
+
+# Write a Python program to retrieve the path and name of the file currently being executed.
+
+# import os
+
+# # Get the full path of the currently executing file
+# file_path = os.path.abspath(__file__)
+
+# # # file_path = os.path.abspath("Git-Python") 
+
+# # Display the result
+# print("Full path of the currently executing file:")
+# print(file_path)
+
+#           --------------------------------------------------
+
+
+# Write a Python program to find out the number of CPUs used.
+
+# import multiprocessing
+
+# # Get the number of CPUs
+# cpu_count = multiprocessing.cpu_count()
+
+# print(f"Number of CPUs available: {cpu_count}")
+
+#           -------------------------------------------------------------
+
+# Write a Python program to parse a string to float or integer.
+
+# def parse_number(s):
+#     try:
+#         # Try to convert to integer first
+#         result = int(s)
+#         print(f"Parsed as integer: {result}")
+#     except ValueError:
+#         try:
+#             # Try to convert to float if int fails
+#             result = float(s)
+#             print(f"Parsed as float: {result}")
+#         except ValueError:
+#             print("Input is not a valid number.")
+
+# # Example usage
+# user_input = input("Enter a number: ")
+# parse_number(user_input)
+
+
+#       ----------------------------------------------------
