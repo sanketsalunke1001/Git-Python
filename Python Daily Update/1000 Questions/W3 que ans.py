@@ -291,3 +291,256 @@
 #     print(f"{num} is odd")
 
 #           -------------------------------------------------------------
+
+# Write a Python program to count the number 4 in a given list.
+
+# def count_fours(nums):
+#     return nums.count(4)  # count(4) -> to count number given in (<->)
+
+# numbers = [1,3,4,5,7,8,4,9]
+
+# result = count_fours(numbers)
+
+# print ("Number of 4 in the list: ", result)
+
+#       -------------------------------------------------------------------
+
+# Write a Python program to get n (non-negative integer) copies of the first 2 characters of a given string.
+#  Return n copies of the whole string if the length is less than 2.
+
+# def first_two_copies(s, n):
+#     if n < 0:
+#         return "Error: n must be a non-negative integer."
+    
+#     # Get the first two characters if string length >= 2
+#     # Otherwise, use the whole string
+#     part = s[:4] if len(s) >= 3 else s    # here you can declare s[1:5] if len(s) >= 3 else s string slicing with staring and ending point
+#     return part * n
+
+# text = input("Enter a string: ")
+# num = int(input("Enter a non-negative integer: "))
+
+# result = first_two_copies(text, num)  # here called those function values first_two_copies(text, num)
+
+# print("Result:", result)
+
+#           -----------------------------------------------------
+
+# Write a Python program to test whether a passed letter is a vowel or not.
+
+# letter = input("Enter a single letter: ").lower()
+
+# if len(letter) == 1 and letter.isalpha:
+
+#     if letter in 'aeiou':    # in 'aeiou' is to filter input values
+#         print(f"{letter} id vowel.")
+#     else:
+#         print(f"{letter} is not vowel")
+# else:
+#     print("Please enter single alphabet letter only...")
+
+#       -----------------------------------------------------
+
+# Write a Python program that checks whether a specified value is contained within a group of values.
+# Test Data :
+# 3 -> [1, 5, 8, 3] : True
+# -1 -> [1, 5, 8, 3] : False
+
+# def value_in_group (value, group):
+#     return value in group
+
+# print ("3 -> [1, 5, 8, 3] :", value_in_group(3, [1, 5, 8, 3]))
+
+# print ("-1 -> [1, 5, 8, 3]", value_in_group(-1, [1, 5, 8, 3]))
+
+#       --------------------------------------------------------------
+
+# Write a Python program to create a histogram from a given list of integers.
+
+# def create_histogram (values):
+#     for value in values:
+#         print ('*' * value)  # * will be multipy with value
+
+# number = [2,4,6,3,5]
+
+# create_histogram(number) 
+
+#       -------------------------------------------------------------
+
+# Write a Python program that concatenates all elements in a list into a string and returns it.
+
+# def concatenate_list_elements(lst):
+#     return ''.join(str(element) for element in lst)
+
+# my_list = ['Hello', ' ','Sanket', ' ','Salunke']
+
+# result = concatenate_list_elements(my_list)
+
+# print("concatenated stings", result)
+
+#       --------------------------------------------------------------------
+
+# Write a Python program to print all even numbers from a given list of numbers in the same order and stop printing any after 237 in the sequence.
+# Sample numbers list :
+
+# numbers = [    
+#     386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345, 
+#     399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217, 
+#     815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717, 
+#     958,743, 527
+#     ]
+
+# numbers = [    
+#     386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345, 
+#     399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217, 
+#     815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717, 
+#     958, 743, 527]
+
+# for num in numbers:
+#     if num == 237:
+#         break       # Stop the loop when 237 is found
+#     if num % 2 == 0:
+#         print(f"{num} is even")
+
+#       -------------------------------------------------------
+
+# Write a Python program that prints out all colors from color_list_1 that are not present in color_list_2.
+# Test Data :
+# color_list_1 = set(["White", "Black", "Red"])
+# color_list_2 = set(["Red", "Green"])
+# Expected Output :
+# {'Black', 'White'}
+
+# color_list_1 = set(["White", "Black", "Red", "Yellow"])
+# color_list_2 = set(["Red", "Green"])
+
+# result = color_list_1 - color_list_2
+
+# print("Colors in color_list_1 but not in color_list_2:")
+
+# print(result)
+
+#       ----------------------------------------------------------
+
+# Write a Python program that will accept the base and height of a triangle and compute its area.
+
+# base = float(input("Enter the base value: "))
+# height = float(input("Enter the height value: "))
+
+# area = 0.5 * base * height
+
+# print(f"The area of the triangle is {area}")
+
+#           -----------------------------------------------------------------------
+
+# Write a Python program that computes the greatest common divisor (GCD) of two positive integers.
+
+# import math
+
+# a = int(input("Enter a first positive value: "))
+# b = int(input("Enter a second positive value: "))
+
+# gcd = math.gcd(a, b)
+
+# print(f"The gcd of {a} and {b} is {gcd}")
+
+# # 2 
+
+# def compute_gcd(x, y):
+#     while y != 0:
+#         x, y = y, x % y
+#     return x
+
+# # Input
+# a = int(input("Enter first positive integer: "))
+# b = int(input("Enter second positive integer: "))
+
+# # Output
+# print("The GCD of", a, "and", b, "is:", compute_gcd(a, b))
+
+#       --------------------------------------------------------------------
+
+# Write a Python program to find the least common multiple (LCM) of two positive integers.
+
+# import math
+
+# a = int(input("Enter the first positive integer: "))
+# b = int(input("Enter the second positive integer: "))
+
+# if a > 0 and b > 0:
+#     lcm = abs(a * b) // math.gcd(a, b)   # abs(a * b) takes positive value and return positive value // divide the  math.gcd(a, b) 
+
+#     print(f"The LCM of {a} and {b} is {lcm}")
+# else:
+#     print("Please enter positive integers only.")
+
+#       ---------------------------------------------------------------------------
+
+# Write a Python program to sum three given integers. However, if two values are equal, the sum will be zero.
+
+# def custom_sum(a, b, c):
+#     if a == b or b == c or a == c:
+#         return 0
+#     return a + b + c
+
+# x = int(input("Enter first integer: "))
+# y = int(input("Enter second integer: "))
+# z = int(input("Enter third integer: "))
+
+# result = custom_sum(x, y, z)  
+# print("Result:", result)
+
+#           --------------------------------------------------------------------
+
+# Write a Python program to sum two given integers. However, if the sum is between 15 and 20 it will return 20.
+
+# def custom_sum (a,b):
+#     total = a + b
+#     if 15 <= total < 20:
+#         return 20
+#     return total
+
+# x = int(input("Enter first integer: "))
+# y = int(input("Enter a second integer: "))
+
+# result = custom_sum(x, y)
+
+# print("Result: ", result)
+
+#       ----------------------------------------------------------------------
+
+# Write a Python program that returns true if the two given integer values are equal or their sum or difference is 5.
+
+# def check_numbers(a, b):
+#     return a == b or (a + b) == 5 or abs(a - b) == 5
+
+# x = int(input("Enter first number: "))
+# y = int(input("Enter second number: "))
+
+# print("Result:", check_numbers(x, y))
+
+#       ------------------------------------------------------
+
+# Write a Python program to add two objects if both objects are integers.
+
+# def add_if_integers(a, b):
+#     if isinstance(a, int) and isinstance(b, int):
+#         return a + b
+#     else:
+#         return "Both inputs must be integers."
+
+# x = input("Enter first value: ")
+# y = input("Enter second value: ")
+
+# try:
+#     x = int(x)
+#     y = int(y)
+# except ValueError:
+#     print("Error: Inputs must be integers.")
+# else:
+
+#     result = add_if_integers(x, y)
+#     print("Result:", result)
+
+#           ------------------------------------------------------
+
