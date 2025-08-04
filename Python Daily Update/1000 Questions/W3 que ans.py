@@ -749,3 +749,711 @@
 
 
 #       ----------------------------------------------------
+
+# Write a Python program to list all files in a directory.
+
+#   -----------------------------------------------------------
+
+# Write a Python program to print without a newline or space.
+
+# # end='' disables that so the next print() continues on the same line with no space
+
+# print('s', end='')
+# print('a', end='')
+# print('n', end='')
+# print('k', end='')
+# print('e', end='')
+# print('t', end='')
+
+#       ----------------------------------------------------------------------
+
+# Write a Python program to determine the profiling of Python programs.
+# Note: A profile is a set of statistics that describes how often and for how long various parts of the program executed. 
+# These statistics can be formatted into reports via the pstats module.
+
+
+# import cProfile
+# import pstats
+
+# # A sample function to profile
+# def slow_function():
+#     total = 0
+#     for i in range(1, 10000):
+#         for j in range(i):
+#             total += (i + j)
+#     return total
+
+# # Profile the function and print stats
+# def run_profile():
+#     profiler = cProfile.Profile()
+#     profiler.enable()
+#     slow_function()
+#     profiler.disable()
+
+#     # Create a Stats object and print sorted stats
+#     stats = pstats.Stats(profiler)
+#     stats.strip_dirs()               # Clean up file paths
+#     stats.sort_stats('cumtime')      # Sort by cumulative time
+#     stats.print_stats(10)            # Print top 10 functions
+
+# # Run the profiler
+# run_profile()
+
+# #       -----------------------------------------------------------------------------
+
+# Write a Python program to print to STDERR.
+
+# import sys
+
+# print("This is an error message.", file=sys.stderr)
+
+# #         ------------------------------------------------------------
+
+# import os
+
+# # Access a specific environment variable (e.g., 'HOME' or 'PATH')
+# home = os.environ.get('HOME')   # On Unix/Linux/Mac
+# # home = os.environ.get('USERPROFILE')  # Use this on Windows
+
+# path = os.environ.get('PATH')
+
+# print("HOME directory:", home)
+# print("PATH variable:", path)
+
+# # List all environment variables
+# print("\nAll environment variables:")
+# for key, value in os.environ.items():
+#     print(f"{key}: {value}")
+
+# 55 to 57
+# #         ----------------------------------------------------------------------
+
+# Write a Python program to sum the first n positive integers.
+
+
+# n = int(input("Enter a positive integer: "))
+
+# if n <= 0:
+#     print("Please enter a positive integer.")
+
+# else:
+#     total = n * (n + 1) // 2
+#     print(f"The sum of the first {n} positive integers is: {total}")
+
+#      ------------------------------------------------------------------
+
+# Write a Python program to convert height (in feet and inches) to centimeters.
+
+# inch_to_cm = 2.54
+# feet_to_inches = 12
+
+# feet = int(input("Enter height in feet: "))
+# inches = int(input("Enter additional inches: "))
+
+# total_inches = (feet * feet_to_inches) + inches
+
+# height_cm = total_inches * inch_to_cm
+
+# print(f"Height in centimeters {height_cm:.2f}cm ")
+# print(f"Total inches of feet{feet} to inches is {total_inches}")
+
+#    #  --------------------------------------------------------------------
+
+# Write a Python program to calculate the hypotenuse of a right angled triangle.
+
+# import math
+
+# a = float(input("Enter the length of side a: "))
+# b = float(input("Enter the length of side b: "))
+
+# hypotenuse = math.sqrt(a**2 + b**2)
+
+# print(f"The hypotenuse of the triangle is {hypotenuse:.2f} ")
+
+
+#       ---------------------------------------------------------------
+
+# Write a Python program to convert the distance (in feet) to inches, yards, and miles.
+
+# feet = float(input("Enter distance in feet: "))
+
+# inches = feet * 12
+# yards = feet / 3
+# miles = feet / 5280
+
+# print(f"\n Distance conversion for {feet}feet")
+# print(f"Inches: {inches}")
+# # # print(f"Yards: {yards:.2f}")
+# # # print(f"Miles: {miles:.2f}")
+
+# print(f"Yards: {yards}")
+# print(f"Miles: {miles}")
+
+#               ----------------------------------------------------------------------
+
+# Write a Python program to convert all units of time into seconds.
+
+# days = int(input("Enter number of days: "))
+# hours = int(input("Enter number of hours: "))
+# minutes = int(input("Enter number of minutes: "))
+# seconds = int(input("Enter number of seconds: "))
+
+# total_seconds = (
+#     days * 24 * 60 * 60 +
+#     hours * 60 * 60 +
+#     minutes * 60 +
+#     seconds 
+# )
+
+# print(f"Total time in seconds: {total_seconds}")
+
+#       #-  # 64-----------------------------------------
+
+# Write a Python program to calculate the body mass index.
+
+# weight = float(input("Enter your weight in Kilogram: "))
+# height = float(input("Enter your height in meters: "))
+
+# bmi = weight / (height ** 2)
+
+# print(f"Your body mass index is {bmi:.2f}")
+
+# if bmi < 18.5:
+#     category = "Underweight"
+# elif 18.5 <= bmi < 25:
+#     category = "Normal weight"
+# elif 25 <= bmi < 30:
+#     category = "Over Weight"
+# else:
+#     category = "obese"
+
+# print(f"BMI category: {category}")
+
+#       ------------------------------------------
+
+#Write a Python program to convert pressure in kilopascals to pounds per square inch, 
+# a millimeter of mercury (mmHg) and atmosphere pressure.
+
+# kpa = float(input("Enter pressure in kilopascals (kPa): "))
+
+# psi = kpa * 0.145038
+# mmhg = kpa * 7.50062
+# atm = kpa / 101.325
+
+# print(f"\nPressure conversions for {kpa} kPa:")
+# print(f"Pounds per square inch (psi): {psi:.2f}")
+# print(f"Millimeters of mercury (mmHg): {mmhg:.2f}")
+# print(f"Atmospheres (atm): {atm:.3f}")
+
+#       ------------------------------------------------------------------
+
+# Write a Python program to calculate sum of digits of a number.
+
+
+# num = input("Enter a number: ")
+
+# digit_sum = 0
+
+# for digit in num:
+#     if digit.isdigit():  # Make sure it's a digit (ignores minus sign, dots, etc.)
+#         digit_sum = digit_sum + int(digit)
+
+# print(f"Sum of digits: {digit_sum}")
+
+#       --------------------------------------------------------------------
+
+# Write a Python program to sort three integers without using conditional statements and loops.
+
+# a = int(input("Enter first integer: "))
+# b = int(input("Enter second integer: "))
+# c = int(input("Enter third integer: "))
+
+# sorted_values = sorted([a, b, c])
+
+# print("Sorted integers:", sorted_values)
+
+
+#       -----------------------------------------------------
+
+#  # # 70 71 #  ----------------------------------------
+
+# Write a Python program to get the details of the math module.
+
+# import math
+
+# # List all functions, constants, etc. in the math module
+# print("List of available functions and constants in math module:\n")
+# print(dir(math))  # # to get all list 
+
+# # OR use help() for detailed documentation
+# print("\nDetailed help on math module:\n")
+# help(math)   # # # Documetation and description of functions 
+
+#       ------------------------------------------------------------------------------------
+
+
+# Write a Python program to calculate the midpoints of a line.
+
+# x1 = float(input("Enter x-coordinate of the first point: "))
+# y1 = float(input("Enter y-coordinate of the first point: "))
+# x2 = float(input("Enter x-coordinate of the second point: "))
+# y2 = float(input("Enter y-coordinate of the second point: "))
+
+# mid_x = (x1 + x2) / 2
+# mid_y = (y1 + y2) / 2
+
+# print(f"The midpoint of the line is: ({mid_x}, {mid_y})")
+
+#          -------------------------------------------------------------
+
+# Write a Python program to hash a word.
+
+# import hashlib
+
+# word = input("Enter a word to hash: ")
+
+# hashed_word = hashlib.sha256(word.encode()).hexdigest()
+
+# print(f"SHA-256 hash of '{word}':\n{hashed_word}")
+
+
+#       ----------------------------------------------------------
+
+# Write a Python program to get the copyright information and write Copyright information in Python code.
+
+# import sys
+
+# print("Python Copyright Information:")
+# print(sys.copyright)
+
+#           --------------------------------------------------------------------
+
+# #  76 77
+
+# Write a Python program to get the size of an object in bytes.
+
+# import sys
+
+# # Example objects
+# x = 42
+# y = "Hello, world!"
+# z = [1, 2, 3, 4, 5]
+
+# # Get and print sizes
+# print(f"Size of integer x: {sys.getsizeof(x)} bytes")  #  getsizeof(x) -------> to get size of an object call through import sys
+# print(f"Size of string y: {sys.getsizeof(y)} bytes")
+# print(f"Size of list z: {sys.getsizeof(z)} bytes")
+
+#       -----------------------------------------------------
+
+# Write a Python program to get the current value of the recursion limit.
+
+# import sys
+
+# current_list = sys.getrecursionlimit()
+
+# print(f"Current recurssion limit: {current_list}")
+
+#       --------------------------------------------------------------
+
+# Write a Python program to concatenate N strings.
+
+# n = int(input("Enter the number of strings to concatenate: "))
+
+# strings = []
+
+# for i in range(n):
+#     s = input(f"Enter string {i + 1}: ")
+#     strings.append(s)
+
+# result = ''.join(strings)
+
+# print("Concatenated string:", result)
+
+#       -----------------------------------------------------------------
+
+# Write a Python program to calculate the sum of all items of a container (tuple, list, set, dictionary).
+
+# def sum_container(container):
+#     if isinstance (container, dict):
+#         return sum (container.values())
+#     elif isinstance(container, (list,tuple,set)):
+#         return sum (container)
+#     else:
+#         return "Unsupported data type"
+    
+# example_list = [1, 2, 3, 4]
+# example_tuple = (10, 20, 30)
+# example_set = {5, 10, 15}
+# example_dict = {'a': 100, 'b': 200, 'c': 300}
+
+# print("Sum of list:", sum_container(example_list))
+# print("Sum of tuple:", sum_container(example_tuple))
+# print("Sum of set:", sum_container(example_set))
+# print("Sum of dictionary values:", sum_container(example_dict))
+
+#       ------------------------------------------------------------
+
+# Write a Python program to test whether all numbers in a list are greater than a certain number.
+
+# numbers = [10, 20, 35, 50, 60, 70, 80]
+
+# threshold = int(input("Enter the number to compare against: "))
+
+# if all(num > threshold for num in numbers):    # all() checks if every element in the list satisfies the condition
+#     print(f"All numbers in the list are greater than {threshold}.")
+# else:
+#     print(f"Not all numbers are greater than {threshold}.")
+
+
+#       --------------------------------------------------------------
+
+# Write a Python program to count the number of occurrences of a specific character in a string.
+
+# text = input("Enter a string: ")
+# char = input("Enter the character to count: ")
+
+# # Check that only one character was entered
+# if len(char) != 1:
+#     print("Please enter a single character.")
+# else:
+#     count = text.count(char)
+#     print(f"The character '{char}' appears {count} time(s) in the string.")
+
+#       ---------------------------------------------------------------------------------
+
+#  # 85     --------------------------------------------------------------------
+
+# Write a Python program to get the ASCII value of a character.
+
+# char = input("Enter a character: ")
+
+# if len(char) != 1:
+#     print("Please enter exactly one character.")
+# else:
+#     ascii_value = ord(char)
+#     print(f"The ASCII value of '{char}' is: {ascii_value}")
+
+#       -------------------------------------------------------------
+
+# #  87
+
+#       -------------------
+
+# Given variables x=30 and y=20, write a Python program to print "30+20=50".
+
+# x = 30
+# y = 20
+
+# print(f"{x}+{y}={x + y}")
+
+
+#       ----------------------------------------------------------
+
+#  # 89
+
+#           ----------------------------------
+
+# Write a Python program to perform an action if a condition is true.
+# Given a variable name, if the value is 1, display the string "First day of a Month!" and do nothing if the value is not equal.
+
+
+# day = int(input("Enter the day of the month: "))
+
+# if day == 1:
+#     print("First day of a Month!")
+
+#       ---------------------------------------------------
+
+# Write a Python program to swap two variables.
+
+# a = input("Enter value for a: ")
+# b = input("Enter value for b: ")
+
+# print(f"\nBefore swapping: a = {a}, b = {b}")
+
+# a, b = b, a
+
+# print(f"After swapping: a = {a}, b = {b}")
+
+#           ---------------------------------------------------------
+
+# Write a Python program to define a string containing special characters in various forms.
+
+# # Using escape sequences
+# escaped_str = "Line1\nLine2\tTabbed\\Backslash\'Quote\"DoubleQuote"
+
+# # Using Unicode characters (e.g., smiley face and heart)
+# unicode_str = "Unicode examples: \u263A \u2665"
+
+# # Using a raw string (ignores escape sequences)
+# raw_str = r"This is a raw string:\n\t\\Nothing will be escaped"
+
+# # Print all strings
+# print("Escaped string:")
+# print(escaped_str)
+
+# print("\nUnicode string:")
+# print(unicode_str)
+
+# print("\nRaw string:")
+# print(raw_str)
+
+#           ----------------------------------------------------------------
+
+# Write a Python program to get the Identity, Type, and Value of an object.
+
+# obj = input("Enter something: ")
+
+# # Identity (memory address), Type, and Value
+# print("Identity (id):", id(obj))
+# print("Type:", type(obj))
+# print("Value:", obj)
+
+#               ---------------------------------------------------------------
+
+# Write a Python program to convert the bytes in a given string to a list of integers.
+
+# # Input string from user
+# text = input("Enter a string: ")
+
+# # Convert the string to bytes (UTF-8) and then to a list of integers
+# byte_list = list(text.encode('utf-8'))
+
+# # Display the result
+# print(f"Bytes as integers: {byte_list}")
+
+#       --------------------------------------------------
+
+# Write a Python program to check whether a string is numeric.
+
+
+# # Get input from the user
+# s = input("Enter a string: ")
+
+# if s.isnumeric():
+#     print("The string is numeric.")
+# else:
+#     print("The string is not numeric.")
+
+#           ------------------------------------------------------------
+
+#   #  96 97
+
+#       ----------------------------------------
+
+# Write a Python program to get system time.
+
+# Note : The system time is important for debugging, network information, random number seeds,
+#  or something as simple as program performance.
+
+# from datetime import datetime
+
+# current_time = datetime.now().time()
+
+# print(current_time)
+
+# ## 2 nd 
+
+# import time
+
+# current_time = time.strftime("%H:%M:%S")
+
+# print("Current System Time:", current_time)
+
+#           ----------------------------------------------
+
+#  # 99
+
+# Write a Python program to get the name of the host on which the routine is running.
+
+# import socket
+
+# host_name = socket.gethostname()
+
+# print(host_name)
+
+#              -----------------------------------------------------------------------------
+
+# Write a Python program to get numbers divisible by fifteen from a list using an anonymous function.
+
+
+# numbers = [15, 30, 22, 45, 60, 17, 19, 90, 100, 105]
+
+# divisible_by_15 = list(filter(lambda x: x % 15 == 0, numbers))
+
+# print("Numbers divisible by 15:", divisible_by_15)
+
+#                        -----------------------------------------------------------------
+
+# Write a Python program to remove the first item from a specified list.
+
+# my_list = [10, 20, 30, 40, 50, 60, 70]
+
+# if my_list:
+#     removed_item = my_list.pop(2)   # # pop(0) '0' defines position to removes and returns the element.
+#     print(f"Removed item: {removed_item}")
+# else:
+#     print("The list id empty")
+
+# print(f"Updated List: {my_list}")
+
+#           ----------------------------------------------------------------------
+
+# Write a Python program that inputs a number and generates an error message if it is not a number.
+
+# user_input = input("Enter a number: ")
+
+# try:
+#     number = float(user_input)
+#     print(f"You entered a number: {number}")
+# except ValueError:
+#     print("Error, this is not a valid number")
+
+#           ----------------------------------------------------------------
+
+# Write a Python program to filter positive numbers from a list.
+
+# numbers = [14,-5,-10, 0, 5, -3, 8, 12, -7]
+
+# positive_numbers = list(filter(lambda x: x > 0, numbers)) # #  lambda x: x > 0, gives positive value
+
+# print(positive_numbers)
+
+#       -------------------------------------------------------------------
+
+
+# Write a Python program to compute the product of a list of integers (without using a for loop).
+
+# from functools import reduce
+
+# numbers = [2, 3, 4, 5]
+
+# if numbers:
+#     product = reduce(lambda x, y: x * y, numbers)
+#     print("Product:", product)
+# else:
+#     print("The list is empty.")
+
+#       -------------------------------------------------------------------
+
+
+# Write a Python program to print Unicode characters.
+
+# # Using escape sequences
+# print("Unicode smiley face (\\u263A):", "\u263A")  # ☺
+# print("Unicode heart (\\u2665):", "\u2665")        # ♥
+
+# # Using chr() and code points
+# print("Greek capital letter Omega (code point 937):", chr(937))  # Ω
+# print("Emoji rocket (code point 128640):", chr(128640))          # 🚀
+
+# # Print a range of Unicode characters (e.g., 945–950: Greek lowercase)
+# print("Greek lowercase letters (Unicode 945 to 950):")
+# for code in range(945, 951):
+#     print(f"{code}: {chr(code)}", end=' ')
+
+
+#           -----------------------------------------------------------------
+
+# Write a Python program to create a bytearray from a list.
+
+# int_list = [65, 66, 67, 68, 69]  # Corresponds to 'ABCDE'
+
+# byte_arry = bytearray(int_list)
+
+# print(f"Byte array : {byte_arry}")
+
+# print(f"To string conversion",byte_arry.decode('utf-8'))  # # decode to convert into string 
+
+#       -----------------------------------------------------------------
+
+# Write a Python program to round a floating-point number to a specified number of decimal places.
+
+
+# number = float(input("Enter a floating-point number: "))
+# decimals = int(input("Enter the number of decimal places to round to: "))
+
+
+# rounded_num = round(number, decimals)
+
+# print(f"Rounded number: {rounded_num}")
+
+#   # print(f"Rounded number: {rounded_num:.{decimals}f}")
+
+#           --------------------------------------------------------------------------------------------
+
+# Write a Python program to format a specified string and limit the length of a string.
+
+
+# text = input("Enter a string: ")
+# max_length = int(input("Enter maximum length to display: "))
+
+# limited_text = text[:max_length]
+
+# print(f"Formatted (max {max_length} chars): '{limited_text}'")
+
+#  # print("{:.10}".format(text))       # First 10 characters
+#  # print(f"{text:.10}")               # First 10 characters using f-string
+
+#           -----------------------------------------------------
+
+# Write a Python program to determine if a variable is defined or not.
+
+
+# var_name = "my_var"
+
+# my_var = 42   # Optionally define the variable (uncomment the next line to test)
+
+# if var_name in globals() or var_name in locals():
+#     print(f"Variable '{var_name}' is defined.")
+# else:
+#     print(f"Variable '{var_name}' is NOT defined.")
+
+#           --------------------------------------------------
+
+# Write a Python program to determine the largest and smallest integers, longs, and floats.
+
+# import sys
+
+# print("FLOAT VALUES (using sys.float_info):")
+# print("Maximum float value:", sys.float_info.max)
+# print("Minimum positive float value:", sys.float_info.min)
+# print("Float precision (digits):", sys.float_info.dig)
+
+# print("\nINTEGER VALUES:")
+# print("Python integers have arbitrary precision.")
+# print("Example large int:", 10**100)
+# print("Example small int:", -10**100)
+
+#       ----------------------------------------------------------------
+
+# Write a Python program to check whether multiple variables have the same value.
+
+
+# a = 10
+# b = 10
+# c = 10
+
+# if a == b == c:
+#     print("All variables have the same value.")
+# else:
+#     print("Variables have different values.")
+
+#       ----------------------------------------------------------------
+
+# Write a Python program to sum all counts in a collection.
+
+# from collections import Counter
+
+# item_counts = Counter({'apples': 4, 'bananas': 7, 'oranges': 3})
+
+# # Sum all the counts
+# total = sum(item_counts.values())
+
+# print("Total count of all items:", total)
+
+#           ----------------------------------------------------------------
+
+
+
