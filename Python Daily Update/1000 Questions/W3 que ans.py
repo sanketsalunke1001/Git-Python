@@ -1456,4 +1456,239 @@
 #           ----------------------------------------------------------------
 
 
+# Write a Python program to check whether lowercase letters exist in a string.
+
+# def contains_lowercase(s):
+#     for char in s:
+#         if char.islower():
+#             return True
+#     return False
+
+# input_string = input("Enter a string: ")
+
+# if contains_lowercase(input_string):
+#     print(f"Input string --->  {input_string} --- string contains lowercase")
+# else:
+#     print("The string does not contain lowercase")
+
+#       -------------------------------------------------------------------------
+
+# Write a Python program to add leading zeroes to a string.
+
+# def add_leading_zeros(input_strings, total_length):
+#     return input_strings.zfill(total_length)        #  zfill to pads the string with leading zeroes until it reaches the specified length.
+
+
+
+# original_length = input("Enter a string: ")
+# desired_length = int(input("Enter a total length with leading zeros: "))
+
+# result = add_leading_zeros(original_length, desired_length)
+# print("Result with leading zeros: ",result)
+
+#           -----------------------------------------------------------------------------
+
+# Write a Python program that uses double quotes to display strings.
+
+# greeting = "Hello, world!"
+# name = "Sanket"
+# message = "Welcome to Python programming."
+
+# print("Greeting:", greeting)
+# print("Name:", name)
+# print("Message:", message)
+
+#           ------------------------------------------------------
+
+#       # # 132     --------------------------------------------------------
+
+# Write a Python program to split a variable length string into variables.
+
+
+# def split_string_to_variables(input_string, delimiter=' '):         # the function splits the string using a space ' '. You can change this to a comma ',', tab '\t',
+#     parts = input_string.split(delimiter)
+    
+#     return parts
+
+# input_string = input("Enter a string (e.g., 'apple banana cherry'): ")
+# variables = split_string_to_variables(input_string)
+
+# print("Splitted values:")
+# for i, value in enumerate(variables):   #  enumerate(variables) returns each value in the list along with its index.
+#     print(f"Variable {i + 1}: {value}")
+
+
+
+#               ---------------------------------------------------------------------------
+
+# Write a Python program to input two integers on a single line.
+
+
+# a, b = map(int, input("Enter two integers separated by space: ").split())  # #  map(int, ------> converts each string to an integer.
+
+# print("First integer:", a)
+# print("Second integer:", b)
+
+#           ------------------------------------------------------------
+
+# Write a Python program to calculate the time runs (difference between start and current time) of a program.
+
+# import time
+
+# start_time = time.time()
+
+# print("Program is running...")
+# time.sleep(5)  # Wait for 5 seconds as an example   #  time.sleep(5) simulates a delay (replace it with your actual processing).
+
+
+# # Record the end time (current time)
+# end_time = time.time()
+
+# # Calculate the difference
+# run_time = end_time - start_time
+
+# print(f"Time elapsed: {run_time:.2f} seconds")
+
+#               ---------------------------------------------------------------
+
+
+# Write a Python program to print a variable without spaces between values.
+# Sample value : x =30
+# Expected output : Value of x is "30"
+
+# x = 30
+# print(f'Value of x is "{x}"')
+
+#           --------------------------------------------------------
+
+
+# Write a Python program to extract a single key-value pair from a dictionary into variables.
+
+# my_dict = {'name': 'Alice', 'age': 30, 'city': 'New York'}
+
+# key, value = next(iter(my_dict.items()))        # next gets the first item from the iterator
+
+# print("Key:", key)
+# print("Value:", value)
+
+# key_to_extract = 'city'
+# key, value = key_to_extract, my_dict[key_to_extract]
+# print("Key:", key)
+# print("Value:", value)
+
+#               -------------------------------------------------------------
+
+# Write a Python program to convert true to 1 and false to 0.
+
+# # Boolean values
+# a = True
+# b = False
+
+# # Convert to integers
+# a_int = int(a)
+# b_int = int(b)
+
+# # Print the results
+# print(f"True as integer: {a_int}")
+# print(f"False as integer: {b_int}")
+
+
+#               -------------------------------------------------------------
+
+# Write a Python program to convert an integer to binary that keeps leading zeros.
+# Sample data : x=12
+# Expected output : 00001100
+# 0000001100
+
+# x = 12
+
+# binary_8_bit = format(x, '08b')    #  binary format (b), 8 digits, zero-padded.
+# binary_10_bit = format(x, '010b')
+
+# print("8-bit binary:", binary_8_bit)
+# print("10-bit binary:", binary_10_bit)
+
+#           -----------------------------------------------------------------------------
+
+# Write a python program to convert decimal to hexadecimal.
+# Sample decimal number: 30, 4
+# Expected output: 1e, 04
+
+#               -----------------------------------------------------
+
+#           # #  143   ---------------------------------
+
+# Write a Python program to check whether a variable is an integer or string.
+
+# x = 18
+# y = "Sanket"
+# z = 3.14
+
+
+# def check_variable_type(var):
+#     if isinstance(var, int):
+#         print(f"The variable '{var}' is an Integer.")
+#     elif isinstance(var, str):
+#         print(f"The variable '{var}' is an String.")
+#     else:
+#         print(f"The variable is neither an Integer nor a String.")
+
+# check_variable_type(x)
+# check_variable_type(y)
+# check_variable_type(z)
+
+#               ---------------------------------------------------------------------
+
+# Write a Python program to test if a variable is a list, tuple, or set.
+
+
+# def check_data_type(var):
+#     if isinstance(var, list):
+#         print(f"The variable '{var}' is an List.")
+#     elif isinstance(var, tuple):
+#         print(f"The variable '{var}' is an Tuple.")
+#     elif isinstance(var, set):
+#         print(f"The variable '{var}' is an Set.")
+#     else:
+#         print(f"The variable '{var}' is not a List, Tuple, or Set.")
+
+# a = [1, 2, 3]
+# b = (4, 5, 6)
+# c = {7, 8, 9}
+# d = "Sanket"
+
+# check_data_type(a)
+# check_data_type(b)
+# check_data_type(c)
+# check_data_type(d)
+
+#           # # 146  ---------------
+
+#                   ---------------------------------------------------------------
+
+# Write a Python function to check whether a number is divisible by another number. Accept two integer values from the user.
+
+
+# def is_divisible(a, b):
+#     if b == 0:
+#         return "Division by zero is not allowed"
+#     elif a % b == 0:
+#         print(f"{a} is divisible by {b}")
+#     else:
+#         print(f"{a} is NOT divisible by {b}.")
+    
+# try:
+
+#     num1 = int(input("Enter the first integer: "))
+#     num2 = int(input("Enter the second integer: "))
+
+
+#     result = is_divisible(num1, num2)
+
+#     print(result)
+
+# except ValueError:
+#     print("Please enter valid integers.")
+
+#           ------------------------------------------------------------------
 
