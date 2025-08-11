@@ -1692,3 +1692,64 @@
 
 #           ------------------------------------------------------------------
 
+# Write a Python function to find the maximum and minimum numbers from a sequence of numbers.
+# Note: Do not use built-in functions.
+
+# def find_max_min(numbers):
+#     if not numbers:
+#         return "The sequence is empty."
+    
+#     max_num = numbers[0]
+#     min_num = numbers[0]
+
+
+#     for num in numbers[1:]:
+#         if num > max_num:
+#             max_num = num
+#         if num < min_num:
+#             min_num = num
+
+#     return max_num, min_num
+
+
+# sequence = [20, 8, 5, 9, -2, 16, 0, 4]
+
+# maximum, minimum = find_max_min(sequence)
+# print(f"Maximum: {maximum}")
+# print(f"Minimum: {minimum}")
+
+#               ------------------------------------------------------------
+
+# Write a Python function that takes a positive integer and returns the
+#  sum of the cube of all positive integers smaller than the specified number.
+
+
+# print(sum_of_cubes_below(2))   
+# print(sum_of_cubes_below(5))  
+# print(sum_of_cubes_below(10))   
+
+#               ------------------------------------------------------------------------
+
+# Write a Python function to check whether a distinct pair of numbers 
+# whose product is odd is present in a sequence of integer values.
+
+# def has_odd_product_pair(numbers):
+#     odd_count = 0
+
+#     for num in numbers:
+#         if num % 2 != 0:
+#             odd_count += 1
+#             if odd_count >= 2:
+#                 return True  
+
+#     return False 
+
+# sequence = [3, 5, 10, 12, 4]
+
+# if has_odd_product_pair(sequence):
+#     print("There is a distinct pair whose product is odd.")
+# else:
+#     print("No such pair exists.")
+
+#           --------------------------------------------------------------------------------------
+
