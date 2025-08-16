@@ -20,8 +20,6 @@
 # for i in range(1, 11):
 #     print(f"{num} x {i} = {num * i}")
 
-#--------------------------
-
 # num1 = int(input("Enter number to print its Multiplication table: "))
 
 # num2 = int(input("Enter number to print its Multiplication table: "))

@@ -2,11 +2,11 @@
 
 #       -------------------------------------------------------
 
-#  # Write a Python program to find out what version of Python you are using.
+#  Write a Python program to find out what version of Python you are using.
 
 
 # import sys
-
+# 
 # # Get the full version info
 # version_info = sys.version_info
 
@@ -30,7 +30,7 @@
 
 #       -------------------------------------------------------------------
 
-#   # Write a Python program that calculates the area of a circle based on the radius entered by the user.
+#   Write a Python program that calculates the area of a circle based on the radius entered by the user.
 
 # import math
 
