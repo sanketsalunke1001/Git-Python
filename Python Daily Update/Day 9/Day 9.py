@@ -340,3 +340,98 @@
 
 #                         --------------------------------------------------------------------
 
+# Given a list of tuples with student marks, find all unique tuples using a set.
+
+# student_marks = [(55, 44), (33, 22), (56, 34), (67, 98), (23, 48)]
+
+# unique_marks = set(student_marks)
+
+# print(unique_marks)
+
+
+#                         --------------------------------------------------------------------
+
+
+# Convert a set of numbers into a list and sort it.
+
+# numbers_set = {6, 3, 9, 1, 2}
+
+# sorted_numbers = sorted(list(numbers_set))
+
+# print(sorted_numbers)
+
+#                         --------------------------------------------------------------------
+
+# Convert a set of numbers into a tuple and print it.
+
+# numbers_set = {6, 3, 9, 1, 2}
+
+# numbers_tuple = tuple(numbers_set)
+
+# print(numbers_tuple)
+
+#                         --------------------------------------------------------------------
+
+# Create a set from a list of city names and count unique cities. 0 
+
+
+# cities = ["Mumbai", "Pune", "Bangalore", "Delhi", "Solapur"]
+
+# unique_cities = set(cities)
+
+# unique_cities_count = len(unique_cities)
+
+# print(unique_cities_count)
+
+#                         --------------------------------------------------------------------
+ 
+# Create a set from a tuple of roll numbers and check if a roll number exists.
+
+roll_numbers_tuple = (10, 11, 12, 13, 14)
+
+# roll_numbers_set = set(roll_numbers_tuple)
+
+# roll_num_to_check = 13
+
+# if roll_num_to_check in roll_numbers_set:
+#     print(f"Roll number {roll_num_to_check} exists.")
+# else:
+#     print(f"Roll number {roll_num_to_check} does not exist.")
+
+#                         --------------------------------------------------------------------
+
+# Given a list of names, remove duplicates using set and print sorted names.
+
+
+# names = ["Sanket", "Sandeep", "Sandesh", "Sushant", "Suresh", "Madan"]
+
+# unique_names = set(names)
+
+# sorted_names = sorted(unique_names)
+# print("Sorted unique names:", sorted_names)
+
+
+#                         --------------------------------------------------------------------
+
+# Store seating arrangements (tuples) in a list, remove duplicates using set.
+
+# seating_arrangements = [("Sanket", "1"), ("Sandeep", "2"), ("Sushant", "3"), ("Sanket", "1")]
+
+# unique_seats = set(seating_arrangements)
+
+# unique_seats_list = list(unique_seats)
+# print("Unique seating arrangements:", unique_seats_list)
+
+
+#                         --------------------------------------------------------------------
+
+# Given a list of tuples with cricket scores, find the unique score combinations.
+
+# cricket_scores = [(110, 4), (150, 5), (120, 3), (150, 5), (125, 2)]
+
+# unique_scores = set(cricket_scores)
+
+# print("Unique cricket score combinations:", unique_scores)
+
+#                         --------------------------------------------------------------------
+
