@@ -435,17 +435,158 @@
 
 #                         --------------------------------------------------------------------
 
+# Store student roll numbers and names. Ask the user to enter a roll number → print the name.
+
+# students = {
+#     11: "Sanket",
+#     12: "Ajay",
+#     13: "Akash"
+# }
+
+# roll = int(input("Enter roll number: "))
+
+# if roll in students:
+#     print(f"Name: {students[roll]}")
+# else:
+#     print("Roll number not found.")
+
+
 
 #                         --------------------------------------------------------------------
 
+# Create a dictionary of English words and their Hindi meanings. Ask the user to translate a word.
+
+
+# dictionary = {
+#     "apple": "सेब",
+#     "water": "पानी",
+#     "book": "किताब",
+#     "sun": "सूरज"
+# }
+
+# word = input("Enter an English word to translate: ").lower()
+
+# if word in dictionary:
+#     print(f"The Hindi meaning of '{word}' is: {dictionary[word]}")
+# else:
+#     print("Word not found in dictionary.")
+
 
 #                         --------------------------------------------------------------------
 
+# Treasure Hunt: Store treasures in dictionary keys (Red Room, Blue Room, etc.). Let user guess the correct room.
+
+# treasures = {
+#     "Red Room": False,
+#     "Blue Room": True,     # Let's say the treasure is in the Blue Room
+#     "Green Room": False,
+#     "Yellow Room": False
+# }
+
+# guess = input("Guess the room (Red Room, Blue Room, Green Room, Yellow Room): ")
+
+# if guess in treasures:
+#     if treasures[guess]:
+#         print("Congratulations! You found the treasure! 🏆")
+#     else:
+#         print("Sorry, no treasure here. Try again!")
+# else:
+#     print("That room doesn't exist!")
 
 #                         --------------------------------------------------------------------
 
+# Create a dictionary of usernames and passwords. Ask user to login by checking dictionary.
 
-#                         ------------------------------------------------------------------
+# users = {
+#     "Sanket": "pass123",
+#     "Ajay": "pass456",
+#     "Akash": "pass789"
+# }
+
+# username = input("Enter username: ")
+# password = input("Enter password: ")
+
+# if username in users:
+#     if users[username] == password:
+#         print("Login successful!")
+#     else:
+#         print("Incorrect password.")
+# else:
+#     print("Username not found.")
+    
+
+#                         --------------------------------------------------------------------
+
+# Store 5 products and prices. Ask the user to enter product names → print total bill.
+
+# products = {
+#     "water": 20,
+#     "Soda": 25,
+#     "milk": 55,
+#     "bread": 20,
+#     "Onion": 40
+# }
+
+# user_input = input("Enter the product names you want to buy (comma-separated): ")
+# items = user_input.lower().split(",")
+
+# total = 0
+# for item in items:
+#     item = item.strip()
+#     if item in products:
+#         total += products[item]
+#     else:
+#         print(f"'{item}' is not available.")
+
+# print("Total bill:", total)
 
 
-#                         ------------------------------------------------------------------
+
+
+
+#                         --------------------------------------------------------------------
+
+# Store cricket players and their scores. Ask the user to guess who scored the highest.
+
+
+# scores = {
+#     "Kohli": 89,
+#     "Smith": 75,
+#     "Root": 92,
+#     "Babar": 81,
+#     "Williamson": 77
+# }
+
+# guess = input("Guess which player scored the highest: ")
+
+# top_player = max(scores, key=scores.get)
+
+# if guess.strip().capitalize() == top_player:
+#     print("Correct! 🎉", top_player, "scored the highest with", scores[top_player])
+# else:
+#     print("Wrong guess. 😞 It was", top_player, "with", scores[top_player])
+
+
+#                         --------------------------------------------------------------------
+
+# Store suspects (name, place, item). Write code to find who is the thief (like detective puzzle).
+
+# suspects = {
+#     "Alice": ("Kitchen", "Knife"),
+#     "Bob": ("Garden", "Shovel"),
+#     "Charlie": ("Library", "Book"),
+#     "Diana": ("Kitchen", "Jewels"),
+#     "Evan": ("Garage", "Wrench")
+# }
+
+# theft_place = "Kitchen"
+# stolen_item = "Jewels"
+
+# for name, (place, item) in suspects.items():
+#     if place == theft_place and item == stolen_item:
+#         print("The thief is:", name)
+#         break
+
+
+#                         --------------------------------------------------------------------
+

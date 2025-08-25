@@ -387,16 +387,16 @@
  
 # Create a set from a tuple of roll numbers and check if a roll number exists.
 
-roll_numbers_tuple = (10, 11, 12, 13, 14)
+# roll_numbers_tuple = (10, 11, 12, 13, 14)
 
-roll_numbers_set = set(roll_numbers_tuple)
+# roll_numbers_set = set(roll_numbers_tuple)
 
-roll_num_to_check = 13
+# roll_num_to_check = 13
 
-if roll_num_to_check in roll_numbers_set:
-    print(f"Roll number {roll_num_to_check} exists.")
-else:
-    print(f"Roll number {roll_num_to_check} does not exist.")
+# if roll_num_to_check in roll_numbers_set:
+#     print(f"Roll number {roll_num_to_check} exists.")
+# else:
+#     print(f"Roll number {roll_num_to_check} does not exist.")
 
 #                         --------------------------------------------------------------------
 
@@ -434,4 +434,5 @@ else:
 # print("Unique cricket score combinations:", unique_scores)
 
 #                         --------------------------------------------------------------------
+
 
